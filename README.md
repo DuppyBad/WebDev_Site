@@ -23,3 +23,8 @@
 - Login functionality
 - Session management
 - Multiple pages
+
+
+
+### NPM things
+Almost everything npm hungers for more packages 
