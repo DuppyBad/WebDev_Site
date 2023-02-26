@@ -6,20 +6,22 @@ import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import BigButton from "@/shared/BigButton";
 type Props = {
+    TopOfPage: boolean
     selectedPage: SelectedPage;
     setSelectedPage: (value: SelectedPage) => void
 }
 
 
-const Navi = ({selectedPage, setSelectedPage}: Props) => {
+const Navi = ({TopOfPage, selectedPage, setSelectedPage}: Props) => {
     // flexBetween helps responsiveness, scaling is automated now more or less
     // the fixed class fixes nav to top, top 0 is zeroth pixel top etc
     const flexBetween = "flex items-center justify-between";
     const biggerThanMediumScreen = useMediaQuery("(min-width:1060px)")
     const [MenuToggle, setMenuToggle] = useState<boolean>(false);
+    const navBackground = TopOfPage ? "" : "bg-rosePine-love drop-shadow"
   return <nav>
     <div
-        className={`${flexBetween} fixed top-0 z-30 w-full py-8`}
+        className={`${navBackground} ${flexBetween} fixed top-0 z-30 w-full py-8`}
     >
         <div className={`${flexBetween} mx-auto w-5/6`}>
             <div className={`${flexBetween} w-full gap-16`}>
