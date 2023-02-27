@@ -6,3 +6,8 @@ export enum SelectedPage {
     AboutUs = "aboutus",
   }
   // Consumed at compile time to normal js don't need to think about it
+export interface MissionType{
+  icon: JSX.Element;
+  title: string;
+  description: string;
+}

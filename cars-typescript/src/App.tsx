@@ -3,6 +3,7 @@ import Navi from "@/scenes/navi"
 import { useEffect, useState } from "react"
 import Home from "@/scenes/home"
 import { SelectedPage } from "./shared/types";
+import Mission from "@/scenes/Mission"
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
@@ -26,8 +27,9 @@ function App() {
         TopOfPage={TopOfPage}
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
-       />
+      />
       <Home setSelectedPage={setSelectedPage}/>
+      <Mission setSelectedPage={setSelectedPage}/>
     </div>
   )
 }

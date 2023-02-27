@@ -21,7 +21,7 @@ const Navi = ({TopOfPage, selectedPage, setSelectedPage}: Props) => {
     const navBackground = TopOfPage ? "" : "bg-rosePine-pine drop-shadow"
   return <nav>
     <div
-        className={`${navBackground} ${flexBetween} fixed top-0 z-30 w-full py-8`}
+        className={`${navBackground} ${flexBetween} fixed top-0 z-30 w-full py-5`}
     >
         <div className={`${flexBetween} mx-auto w-5/6`}>
             <div className={`${flexBetween} w-full gap-16`}>

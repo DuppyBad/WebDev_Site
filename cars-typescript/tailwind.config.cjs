@@ -62,7 +62,7 @@ module.exports = {
         },
         content: {
           // Holds the generic content images such as some_waves.png etc
-          shadetext: "url('./assets/brainclean.png')",
+          brainclean: "url('./assets/brainclean.png')",
         },
       },
       screens: {
