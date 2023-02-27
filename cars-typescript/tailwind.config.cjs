@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -54,24 +55,21 @@ module.exports = {
           highlightMed: "#dfdad9",
           highlightHigh: "#cecacd",
         },
+      },
         fontFamily: {
           jetbrainsmono: ["JetBrains Mono", "monospace"],
           dmsans: ["DM Sans", "sans-serif"]
         },
         content: {
           // Holds the generic content images such as some_waves.png etc
-        },
-        screens: {
-          xs: "480px", //extra small screens
-          sm: "768px", //normal small screens
-          med: "1060px" //medium screens
+          shadetext: "url('./assets/brainclean.png')",
         },
       },
-    },
-  },
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  plugins: [],
-}
+      screens: {
+        xs: "480px", //extra small screens
+        sm: "768px", //normal small screens
+        med: "1060px" //medium screens
+        },
+      plugins: [],
+      },
+    }

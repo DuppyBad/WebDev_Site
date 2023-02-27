@@ -18,7 +18,7 @@ const Navi = ({TopOfPage, selectedPage, setSelectedPage}: Props) => {
     const flexBetween = "flex items-center justify-between";
     const biggerThanMediumScreen = useMediaQuery("(min-width:1060px)")
     const [MenuToggle, setMenuToggle] = useState<boolean>(false);
-    const navBackground = TopOfPage ? "" : "bg-rosePine-love drop-shadow"
+    const navBackground = TopOfPage ? "" : "bg-rosePine-pine drop-shadow"
   return <nav>
     <div
         className={`${navBackground} ${flexBetween} fixed top-0 z-30 w-full py-8`}
