@@ -7,7 +7,7 @@ type Props = {
 }
 /* Using Typescript power to instantiate an array of things so we can refer without making repitions */
 /* Refers to explicit type from types.ts we crafted for this purpose */
-const mission: Array<MissionType> = [
+const missions: Array<MissionType> = [
     {
         icon: <CodeBracketIcon className="h-6 w-6" />,
         title: "Staying ahead of the curve with cutting-edge technology and expertise.",
@@ -48,8 +48,8 @@ return (
         </div>
 
         {/* Cool boxes for Mission subtypes */}
-        <div className="md:flex items-center justify-between gap-8 mt-5"></div>
-            {mission.map((mission: MissionType) => (
+       <div className="md:flex items-center justify-between gap-8 mt-5"></div>
+            {missions.map((mission: MissionType) => (
                 <Mission 
                     key={mission.title}
                     icon = {mission.icon}
