@@ -22,7 +22,7 @@ function App() {
     // Protect from memory leak and eternal function running
   })
   return (
-    <div className="app bg-rosePine-surface">
+    <div className="bg-rosePine-surface">
       <Navi
         TopOfPage={TopOfPage}
         selectedPage={selectedPage}

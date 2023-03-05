@@ -25,7 +25,7 @@ const MissionBox = ({ icon, title, description, setSelectedPage }: Props) => {
                     onClick={() => setSelectedPage(SelectedPage.AboutUs)}
                     href={`#${SelectedPage.AboutUs}`}
                 >
-                    <p>Learn More</p>
+                    <p className="py-3">Learn More</p>
                 </AnchorLink>
                 {description}
             </p>
