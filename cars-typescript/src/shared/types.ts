@@ -11,4 +11,4 @@ export interface MissionType {
     title: string;
     description: string;
 }
-// Also consumed at compile time, doesn't want to behave currently
+// Behaves itself now we chilling

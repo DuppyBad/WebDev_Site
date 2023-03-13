@@ -1,0 +1,19 @@
+{
+  "name": "backend_tinybrain",
+  "version": "1.0.0",
+  "description": "The backend for the software dev site tinybrain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tinybrain",
+    "web",
+    "http"
+  ],
+  "author": "Iseefa Francis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
