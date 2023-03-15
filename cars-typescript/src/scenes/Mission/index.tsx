@@ -41,7 +41,7 @@ type Props = {
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section id="missions" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="missions" className="mx-auto min-h-full w-5/6 py-20 bg-inherit">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Mission)}
       >
@@ -132,12 +132,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
               }}
             >
               <p className="my-5">
-                Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
-                egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
-                fames vitae vitae quis. Quis amet vulputate tincidunt at in
-                nulla nec. Consequat sed facilisis dui sit egestas ultrices
-                tellus. Ullamcorper arcu id pretium sapien proin integer nisl.
-                Felis orci diam odio.
+              As the esports and software development industries continue to grow rapidly, now is the perfect time to invest in Tinybrain Ltd. Our team of skilled developers and engineers have a deep understanding of the esports industry, and we are constantly innovating to develop cutting-edge solutions that meet the needs of esports organizations and fans alike. Our software development services are highly sought after, and we have a proven track record of delivering custom software solutions that help businesses grow and succeed. By investing in Tinybrain Ltd, you will be supporting a company that is at the forefront of two rapidly growing industries, and poised for significant growth in the coming years. With our strong leadership, experienced team, and commitment to innovation and excellence, we are confident that Tinybrain Ltd is an excellent investment opportunity. Contact us today to learn more about how you can invest in the future of esports and software development with Tinybrain Ltd.
               </p>
               <p className="mb-5">
                 Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
