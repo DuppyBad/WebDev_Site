@@ -1,5 +1,5 @@
 import { SelectedPage, ServiceType } from "@/shared/types";
-import javascriptimg from "@/assets/javascript.jpg"
+import javascriptimg from "@/assets/javascript.jpg";
 import { motion } from "framer-motion";
 import HeadText from "@/shared/HeadText";
 import developerimg from "@/assets/developer.jpg";
@@ -8,13 +8,15 @@ type Props = {
 };
 
 // We use another typed constant to make this scalable in future
-const services: Array<ServiceType> = [{
+const services: Array<ServiceType> = [
+  {
     name: "Web Development Services",
     about: `We use Typescript to write safer and more scalable code, which allows us to build complex web applications more efficiently. We also leverage the power of Web Assembly to create high-performance applications that can run in any modern web browser.
 Our web development services include everything from custom web application development to web design, testing, and deployment. We work closely with our clients to understand their unique business needs and provide them with tailored solutions that meet their requirements.
 So whether you're looking to build a new web application from scratch or need help optimizing an existing one, Tinybrain Ltd is here to help. Contact us today to learn more about our web development services and how we can help take your business to the next level.`,
-    image: javascriptimg 
-}];
+    image: javascriptimg,
+  },
+];
 // Maybe share this boilerplate with the other pages?
 const shop = ({ setSelectedPage }: Props) => {
   return (
@@ -53,12 +55,11 @@ const shop = ({ setSelectedPage }: Props) => {
         </motion.div>
         {/* Preparing the size overflow */}
         <div className="mt-10 h-[400px] w-full overflow-x-auto overflow-y-hidden">
-            <ul className="w-[3000px] whitespace-nowrap">
-                {services.map((item,index)=> (
+          <ul className="w-[3000px] whitespace-nowrap">
+            {/*      {services.map((item,index)=> (
                     <Class/>
-                ))}
-            </ul>
-
+                ))} */}
+          </ul>
         </div>
       </motion.div>
     </section>
