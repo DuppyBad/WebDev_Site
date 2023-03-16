@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { Link as Connect} from "react-router-dom" 
 import { Bars4Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Logo from "@/assets/icon.png"
 import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import BigButton from "@/shared/BigButton";
+import LoginPage from "@/routes/LoginPage"
 type Props = {
     TopOfPage: boolean
     selectedPage: SelectedPage;
@@ -53,7 +55,7 @@ const Navi = ({TopOfPage, selectedPage, setSelectedPage}: Props) => {
                                 />
                         </div>
                         <div className={`${flexBetween} gap-8 text-xl`} >
-                            <p>Log In</p>
+                            <connector href="/LoginPage">Log In</connector>
                             <BigButton setSelectedPage={setSelectedPage}>Join Us</BigButton>
                         </div>
                     </div>

@@ -12,3 +12,9 @@ export interface MissionType {
     description: string;
 }
 // Behaves itself now we chilling
+
+export interface ServiceType {
+    name: string;
+    about: string;
+    image: string;
+}

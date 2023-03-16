@@ -6,6 +6,8 @@ import { SelectedPage } from "./shared/types";
 import Mission from "@/scenes/Mission"
 import Shop from "@/scenes/shop"
 import AboutUs from "@/scenes/AboutUs";
+import { BrowserRouter } from 'react-router-dom';
+import LoginPage from '@/routes/LoginPage'
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
@@ -34,6 +36,7 @@ function App() {
       <Mission setSelectedPage={setSelectedPage}/>
       <Shop setSelectedPage={setSelectedPage} />
       <AboutUs setSelectedPage={setSelectedPage} />
+   {/*   <Route path="/login" Component={LoginPage} /> */}
     </div>
   )
 }
