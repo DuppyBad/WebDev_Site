@@ -6,6 +6,9 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 // Pulling data from react hook form docs to help build this, remember to reference
+
+const { register, handleSubmit } = useForm();
+
 const AboutUs = ({ setSelectedPage }: Props) => {
   return (
     <section id="aboutus" className="mx-auto w-5/6 pt-24">
