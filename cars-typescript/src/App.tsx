@@ -29,7 +29,6 @@ function App() {
   });
   return (
     // Browser router does the linking so everything can be ran client-side
-    // May malfunction, was drawn up quickly
     // The routes now function, path specificies the URI
     <BrowserRouter>
       <Routes>

@@ -6,7 +6,6 @@ import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import BigButton from "@/shared/BigButton";
-import LoginPage from "@/routes/LoginPage";
 type Props = {
     TopOfPage: boolean;
     selectedPage: SelectedPage;
@@ -55,7 +54,9 @@ const Navi = ({ TopOfPage, selectedPage, setSelectedPage }: Props) => {
                                     />
                                 </div>
                                 <div className={`${flexBetween} gap-8 text-xl`}>
-                                    <Connect to="/LoginPage">Log In</Connect>
+                                    <Connect to="/Login" className="hover:text-rosePine-love">
+                                        Log In
+                                    </Connect>
                                     <BigButton setSelectedPage={setSelectedPage}>
                                         Join Us
                                     </BigButton>
