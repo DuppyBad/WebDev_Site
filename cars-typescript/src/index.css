@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=JetBrains+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=JetBrains+Mono&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,9 +6,9 @@
 html,
 body,
 #root,
-.app{
-    height: 100%;
-    width: 100%;
-    font-family: "DM Sans", sans-serif;
-    @apply text-rosePine-text
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+  @apply text-rosePine-text;
 }

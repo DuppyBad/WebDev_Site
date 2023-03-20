@@ -7,7 +7,7 @@ type Props = {
 };
 // Pulling data from react hook form docs to help build this, remember to reference
 
-const { register, handleSubmit } = useForm();
+//nst { register, handleSubmit } = useForm();
 
 const AboutUs = ({ setSelectedPage }: Props) => {
   return (

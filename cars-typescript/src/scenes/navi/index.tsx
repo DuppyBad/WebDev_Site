@@ -57,9 +57,11 @@ const Navi = ({ TopOfPage, selectedPage, setSelectedPage }: Props) => {
                                     <Connect to="/Login" className="hover:text-rosePine-love">
                                         Log In
                                     </Connect>
-                                    <BigButton setSelectedPage={setSelectedPage}>
-                                        Join Us
-                                    </BigButton>
+                                    <Connect to="/Register">
+                                        <BigButton setSelectedPage={setSelectedPage}>
+                                            Join Us
+                                        </BigButton>
+                                    </Connect>
                                 </div>
                             </div>
                         ) : (

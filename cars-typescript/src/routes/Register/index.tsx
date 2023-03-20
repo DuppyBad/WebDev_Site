@@ -3,20 +3,15 @@ import axios from "axios";
 import { motion } from "framer-motion";
 import HeadText from "@/shared/HeadText";
 import Logo from "@/assets/icon.png";
-import { Link as Connect } from "react-router-dom";
 
-// Leveraging typescript to ensure uniformity with this LoginForm type, it doesn't need to go into types.ts as I have no plans to reuse it now
-type props = {
-  setUserName: (username: string) => void;
-};
+// Should be just like the login page, just changed post route and footer
 
-//This prop is to extend the class we define in the app, letting us invoke it here
 interface LoginForm {
   username: string;
   password: string;
 }
 
-function Login({ setUserName }: props) {
+function Register() {
   const [loginForm, setLoginForm] = useState<LoginForm>({
     username: "",
     password: "",
@@ -33,7 +28,7 @@ function Login({ setUserName }: props) {
     event.preventDefault();
 
     try {
-      const response = await axios.post("/api/login", loginForm);
+      const response = await axios.post("/api/register", loginForm);
       console.log(response.data); // Get response from backend which should contain our jwt
       // REMOVE IN PRODUCTION
     } catch (error) {
@@ -93,7 +88,7 @@ function Login({ setUserName }: props) {
                 visible: { opacity: 1, x: 0 },
               }}
             ></motion.div>
-            <HeadText>Login to Tinybrain Ltd</HeadText>
+            <HeadText>Sign up with Tinybrain Ltd!</HeadText>
             <label className="mb-2 block font-jetbrainsmono">
               Username:
               <input
@@ -120,22 +115,14 @@ function Login({ setUserName }: props) {
               type="submit"
               className="text-md mx-auto rounded-lg bg-rosePine-love px-10 py-2 hover:bg-rosePineDawn-love hover:text-rosePine-text"
             >
-              Login
+              Register
             </button>
           </form>
           <footer>
-            <Connect
-              className="text-md float-left  flex-shrink-0 text-rosePine-text hover:text-rosePine-love"
-              to="/Register"
-            >
-              Register Here
-            </Connect>
-            <Connect
-              className="text-md inset-x-0 bottom-0 float-right flex-shrink-0 text-rosePine-text hover:text-rosePine-love"
-              to="/Reset"
-            >
-              Forgotten Password?
-            </Connect>
+            <a className="text-md inset-x-0 bottom-0 float-right flex-shrink-0 text-rosePine-text hover:text-rosePine-love">
+              Copyright Tinybrain Ltd, 2023. Tinybrain Ltd is a holding of
+              Iseefa Francis
+            </a>
           </footer>
         </motion.div>
       </motion.div>
@@ -143,4 +130,4 @@ function Login({ setUserName }: props) {
   );
 }
 
-export default Login;
+export default Register;
